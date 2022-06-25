@@ -37,7 +37,7 @@ p{
 # Sections
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 100px 0 0 0;
   overflow: hidden;
 }
 
@@ -454,7 +454,7 @@ position:relative;top:-10vh
 @media (max-width: 991px) {
   .hero {
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 30px 0 60px 0;
   }
   .hero .hero-img {
     text-align: center;
@@ -2403,7 +2403,7 @@ team area css*/
 /*mint section css*/
 
 .mint-section {
-  padding: 5rem 0;
+  padding: 2.5rem 0;
 }
 
 @media (min-width: 1024px) {
