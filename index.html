@@ -24,8 +24,11 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <style media="screen">
@@ -100,7 +103,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                <img src="assets/images/logo.png">
+                <img src="assets/images/logo_animation.gif">
             </div>
         </div>
     </div>
@@ -147,6 +150,37 @@
         </section><!-- End About Section -->
     </div>
 
+    <section class="mint-section" id="minting">
+        <div class="container">
+            <div class="mint">
+                <div class="mint__wrap">
+                    <h2 class="mint__title section-title">Join Cows Gone Mad!</h2>
+                    <p class="mint__text">
+                        Total minted: <span class="total-minted">0 / 3500</span></p>
+                    <p class="mint__text">
+                        xx.xx Eth + Gas fees <br>Max xx per Wallet</p>
+                    <form class="form" action="#">
+                        <div class="form__wrap">
+                            <div class="form__row">
+                                <div class="form__field">
+                                    <button class="form__btn-add input-wrap-left" type="button">-</button>
+                                    <input class="form__input mint-input" type="number" name="#" id="#" value="1">
+                                    <button class="form__btn-add input-wrap-right" type="button">+</button>
+                                </div>
+                                <button class="form__btn-value input-five-button" type="button">5</button>
+                            </div>
+                            <button class="form__btn js-popup-open" type="button">Connect wallet</button>
+                            <button class="form__btn mint-button" type="button">MINT</button>
+                        </div>
+                    </form>
+                    <div class="links-wrap"><a class="mint__link"
+                                               href="#"
+                                               target="_blank">View Contract </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ======= Values Section ======= -->
     <section id="values" class="values">
@@ -160,25 +194,71 @@
             </header>
 
             <div class="container" id="collection">
+                <div>
+                    <h1 style="color:#f25ae4;padding-top:20px ;font-weight:900" class="text-center">The Lore</h1>
+                    <br>
+                    <h5>
+                        <p style="color: white;">A long time ago, planet Earth was ruled by
+                            Humans. Humans farmed other animals for
+                            food and resources, but it was one action that
+                            nearly led to their demise…
+                        </p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <p style="color: white;">Humans began to feed cattle their deceased
+                            relatives.
+                        </p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <p style="color: white;">An infectious brain disease came in to existence
+                            which would spread across planet Earth….
+                        </p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <p style="color: white;">A collection of cows survived the outbreak.
+                            They are affected but not terminal.
+                        </p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <p style="color: white;">The condition means they will forever have
+                            certain behavioural issues but has also resulted
+                            in the development of unique abilities.
+                        </p>
+                    </h5>
+                    <br>
+                    <h5>
+                        <p style="color: white;">The Cows have undergone a mutation, giving
+                            them superior intelligence and now they are
+                            about to enter the Metaverse.
+                        </p>
+                    </h5>
+                    <br><br><br><br>
+                </div>
+
+
                 <h1 style="color:#f25ae4;padding-top:20px ;font-weight:900" class="text-center">Collection</h1>
                 <br>
                 <h5>
-                    <p style="color: white;">This project will consist of several phases, with the first phase being the release of
-                        3500 unique Cows Gone Mad NFTs on to the Solana Blockchain.
+                    <p style="color: white;">Cows Gone Mad (CGM) is a collection of 3,500
+                        unique but equally mad cows living on the Solana
+                        blockchain.
                     </p>
                 </h5>
                 <br>
                 <h5>
-                    <p style="color: white;">This initiative is to draw attention to the unique incident that Mad Cow Disease
-                        brought about and how we can prevent this in the future.
+                    <p style="color: white;">These were the only cows fortunate enough to
+                        survive the fallout of the mad cow disease
+                        outbreak in the 80s and 90s and have re-emerged
+                        to cause havoc as they attempt to enter into the
+                        Metaverse.
                     </p>
                 </h5>
                 <br>
-                <h5>
-                    <p style="color: white;">We hope to expand on this vision by incorporating elements of sustainability as well
-                        as putting together streams of revenue for charitable organisations.
-                    </p>
-                </h5>
+
                 <section class="customer-logos slider">
                     <div class="slide">
                         <img src="assets/images/slider/Sample%203.png" class="collection-image">
@@ -222,65 +302,68 @@
                 </section>
             </div>
 
-            <div class="row">
-                <div class="col-lg-5 mt-4 mt-lg-0" id="story" style="color:white;">
+            <div class="row" style="margin-top: 5rem;">
+                <div class="col-lg-12 mt-4 mt-lg-0" id="story" style="color:white;">
                     <h1 style="color:#f25ae4;padding-top:20px ;font-weight:900">About CGM</h1>
                     <br>
                     <h5>
-                        <p>Cows Gone Mad is an NFT project centred around mad cow disease (Bovine
-                            Spongiform Encephalopathy, BSE). The UK was affected by an outbreak of mad cow
-                            disease in 1980s, and its human equivalent variant Creutzfeldt-Jakob Disease (vCJD)
-                            in the 1990s, resulting culling of 4.4 million cows and the deaths of 177 people.
+                        <p>Cows Gone Mad (CGM) is an NFT project and is the
+                            brainchild of Dr Ricardo Persaud BTEC HNC, MB BS (Lond),
+                            MPHIL, MSB, CBIOL, DOHNS, MRCS (Gen Surg), FRCS
+                            (ORL-HNS), OCT (Otol) (UK), Consultant ENT Surgeon and
+                            Head of Department, NMC Royal Hospital Sharjah, UAE
                         </p>
                     </h5>
+                    <img src="assets/images/Founder.png" class="mt-5 mb-5" width="100%">
                     <br>
                     <h5>
-                        <p>The outbreak of BSE was due to the practice of adding extra protein to cattle feed, in
-                            the form of meat-and-bone meal (MBM) derived from the remains of cows and other
-                            animals. Feeds with MBM were found to increase milk yields more than those
-                            derived from non-animal sources such as soybeans.
+                        <p>Dr Ricardo was part of the global medical task force
+                            assigned to the mission of fighting the mad cow disease
+                            outbreak. The disease affected cattle across the globe
+                            during the 80s and 90s. This moment in history had far
+                            reaching implications with millions of cattle being culled
+                            in order to rid the world of Bovine Spongiform
+                            Encephalopathy (BSE), commonly known as mad cow
+                            disease.
                         </p>
                     </h5>
                 </div>
 
-                <div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-up">
+                <!--<div class="col-lg-7 mt-4 mt-lg-0" data-aos="fade-up">
                     <div class="row">
                         <div class="col-12 col-md-4" style="padding-top:20px">
                             <img src="assets/images/land/Land%20Circle.png" style="width: 100%; height: 220px;" alt="">
                         </div>
                         <div class="col-12 col-md-4" style="padding-top:20px">
-                            <img src="assets/images/land/Land%20Circle%202.png" style="width: 100%; height: 220px;" alt="">
+                            <img src="assets/images/land/Land%20Circle%202.png" style="width: 100%; height: 220px;"
+                                 alt="">
                         </div>
                         <div class="col-12 col-md-4" style="padding-top:20px">
-                            <img src="assets/images/land/Land%20Circle%204.png" style="width: 100%; height: 220px;" alt="">
+                            <img src="assets/images/land/Land%20Circle%204.png" style="width: 100%; height: 220px;"
+                                 alt="">
                         </div>
                     </div>
                     <div class="row" style="align-items: center; justify-content: center;">
                         <div class="col-12 col-md-4" style="padding-top:20px">
-                            <img src="assets/images/land/Land%20Circle%203.png" style="width: 100%; height: 220px;" alt="">
+                            <img src="assets/images/land/Land%20Circle%203.png" style="width: 100%; height: 220px;"
+                                 alt="">
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
             <div class="row pt-5" style="color: white; text-align: justify;">
                 <div class="col-12">
                     <h5>
-                        <p>The project is the brainchild of Dr Ricardo Persaud FRCS (ORL-HNS), Consultant
-                            ENT Surgeon & Head of Department, NMC Royal Hospital, Sharjah, UAE. Dr
-                            Ricardo has a special interest in mad cow disease for two main reasons. Firstly,
-                            because the prion protein that is associated with mad cow disease is predominantly
-                            found in the tonsils and only ENT Surgeons are allowed to remove tonsils in order to
-                            confirm the diagnosis. Secondly, he has contributed towards the eradication of the
-                            disease by being involved in development and trial of single use surgical instruments
-                            (SUSI) for tonsillectomy, whilst working in London, UK. Tonsil SUSI theoretically
-                            reduced the spread of prion proteins associated with reusable tonsillectomy
-                            instruments.
+                        <p>The artwork for this project was inspired by his
+                            experience. the project itself aims to educate people of
+                            the potential dangers when humans interfere with
+                            nature.
                         </p>
                     </h5>
                     <h5>
-                        <p>Mad cow disease taught us that feeding dairy cows with MBM had a twofold effect.
-                            This process resulted in a short-term gain in term of enhanced milk production, but
-                            serious long-term consequences, specifically the death of affected cows and humans.
+                        <p>The project will consist of a number of phases, with the
+                            first phase being the release of 3,500 unique NFTs on the
+                            Solana blockchain.
                         </p>
                     </h5>
                 </div>
@@ -297,80 +380,41 @@
                     <ul class="timeline">
                         <li>
                             <h5 style="color: #f25ae4;">PHASE 1</h5>
-                            <p>Along with the initial release of the 3500 we will embark on a journey to build a
-                                community that believes in sustainability and the many dangers of altering the world
-                                around us to suite our own agenda. The project is close to the hearts of all of us who
-                                have contributed to bring it to reality.
+                            <p> Launch of our first Collection 3500 Mad
+                                Cows
                                 <br><br>
-                                With hope to embody our vision in an initiative we have come to call the Mediverse.
-                                Through this initiative we will strive to educate, entertain, and deliver value to all
-                                those who take up this journey alongside us.
+                                Decentraland Jacket Airdrop
                                 <br><br>
-                                If you partake in the initial collection. You will be presented with many Discord
-                                challengers and competitions to improve you Discord rank as well as unlock utility
-                                for your CGM NFT. This will initiate the early stages of our plan to educate through
-                                entertainment.
-                                <br><br>
-                                Holders will get airdrops of digital apparel for Decentraland branded Cows Gone Mad.
-                                We will also be working with other projects that bridge on the metaverse to develop
-                                interoperable NFTs that expand on our vision.
-                                We have also put in place an action plan to have the project an associated contracts
-                                audited.</p>
+                            </p>
                         </li>
                         <li>
                             <h5 style="color: #f25ae4;">PHASE 2</h5>
-                            <p>This will mark the release of our Website V2. This is to set the stage for a Web3
-                                webapp game that is currently in the early stages of development. This will expand on
-                                the initial gamification that will be implemented in Stage 1.
+                            <p>Launching Website V2
                                 <br><br>
-                                We will also be introducing a smaller collection of Bulls. The size if this second
-                                collection will be 1000 bulls. 15% of these bulls will be a free mint for those who
-                                participate and interact with the Discord the community.
+                                Collection of Mad Bulls
                                 <br><br>
-                                Phase 2 will also introduce the detailed roadmap for our plan to introduce a token
-                                $MOO that will be used in conjunction with the dynamics of the Web3 webapp as
-                                well as establish a base for our plans to move over to a DAO to drive the direction of
-                                the game and future projects.
+                                $MOO Token Roadmap
                                 <br><br>
-                                At this stage will also be initiating our bursary program where we hope to accrue
-                                enough capital through the launch of the second collection to fund one student’s
-                                tertiary education every year until graduation.
                             </p>
                         </li>
                         <li>
                             <h5 style="color: #f25ae4;">PHASE 3</h5>
-                            <p>In this phase we shift our footing to give rise for another entity which is at the core of
-                                both Cows Gone Mad and the Mediverse initiative. This is MetaPolyclinic, a directive
-                                to bring health wellness and education to the Mediverse. All holders of CGM
-                                collections one and two will get a free MetaPolyclinic access token and in tern
-                                airdropped MPC tokens for access to the DAO.
+                            <p> $MOO Token Airdrop
                                 <br><br>
-                                $MOO tokens and NFTs can also be staked to accrue MPC tokens.
-                                In this phase we will also start to reach critical mass where their number of concurrent
-                                competitions and challenges in the Discord and the interactions on the website justify
-                                expanding the team to include additional developers and a small team to run customer
-                                services and orchestrate community events.
+                                MetaPolyclinic Access Token
                                 <br><br>
-                                With the expected influx through initial sales and royalties we will secure a
-                                transparent vault that will enable expansion as well as allow for specific contributions
-                                to specific charities led by DAO proposals.
+                                CGM NFT Staking
+                                <br><br>
                             </p>
                         </li>
                         <li>
                             <h5 style="color: #f25ae4;">PHASE 4</h5>
-                            <p>Now we move to a complete shift toward the Mediverse. Here we will establish a
-                                metaverse clinic MetaPolyclinic (by Dr Ricardo Persaud).
+                            <p>CGM Decentraland Avatar
                                 <br><br>
-                                We hope to use this platform to participate in an opportunity to education in all
-                                potential medical fields. We could hold consultations, access to resources, one on one
-                                therapy sessions with psychologists and other remote services but centred around over
-                                the air therapy for mental health.
+                                MetaPolyclinic Bursary
                                 <br><br>
-                                We also believe that MPC can provide a platform for consultants to provide other
-                                services that include but not limited to addiction,
+                                Metaverse Colaborations
                                 <br><br>
-                                This will include further airdrops to holders including a full 3D avatar to be used in
-                                The Sandbox or an adjacent platform.
                             </p>
                         </li>
 
@@ -379,13 +423,68 @@
             </div>
         </div>
 
-        <div class="container" data-aos="fade-up">
+        <!--<div class="container" data-aos="fade-up">
             <div class="row">
                 <div class="col-12">
                     <h1 style="color:#f25ae4;font-weight:900;text-align:center">Team</h1>
                 </div>
                 <div class="col-md-12" style="text-align:center">
-                    <img src="assets/images/Founder.png" style="width:100%; padding:auto; padding-left:0" alt="">
+                    &lt;!&ndash;<img src="assets/images/Founder.png" style="width:100%; padding:auto; padding-left:0" alt="">&ndash;&gt;
+
+                </div>
+            </div>
+        </div>-->
+    </section>
+    <section id="team-name" class="team-area">
+        <div class="container text-center">
+            <h1 style="color:#f25ae4;font-weight:900;text-align:center; margin-bottom: 25px;">Team</h1>
+            <div class="row team-items">
+                <div class="col-md-6 single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="assets/images/team-1.png" alt="Thumb">
+                        </div>
+                        <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </span>
+                            <h4>Dr Ricardo</h4>
+                            <span>Founder<br>
+                                    Dr Ricardo Persaud BTEC
+                                    HNC, MB BS (Lond),
+                                    MPHIL, MSB, CBIOL,
+                                    DOHNS, MRCS (Gen Surg),
+                                    FRCS (ORL-HNS), OCT
+                                    (Otol) (UK), Consultant
+                                    ENT Surgeon and Head of
+                                    Department, NMC Royal
+                                    Hospital Sharjah, UAE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 single-item">
+                    <div class="item">
+                        <div class="thumb">
+                            <img class="img-fluid" src="assets/images/team-2.png" alt="Thumb">
+                        </div>
+                        <div class="info">
+                                <span class="message">
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </span>
+                            <h4>Monisha</h4>
+                            <span>Content Manager<br>
+                                    Monisha Issano graduated
+                                    from University of Leeds
+                                    and us currently a 3rd year
+                                    PhD student of sociology
+                                    in Atlanta Georgia, USA.
+                                    She is also a university
+                                    lecturer, chapter author
+                                    and copy editor
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -504,6 +603,10 @@
     </section> End F.A.Q Section -->
 
     <!-- ======= Portfolio Section ======= -->
+    <section class="bottom-section">
+        <div class="container"><img src="assets/images/bottom.png" alt="">
+        </div>
+    </section>
 
 
 </main><!-- End #main -->
