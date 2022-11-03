@@ -1,0 +1,333 @@
+/**
+* Template Name: GabiMon
+* Website: ArenaMon
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&amp;display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+    --bg-color: #7f7f7f;
+    --blur-color: #407af3;
+    --blur-color1: #7e84ff;
+    --blur-color2: #3f42ad;
+    --blur-color3: #0033df;
+    --blur-color4: #2a7dff;
+    --blur-color5: #00417b;
+    --blur-color6: #2788e6;
+    --blur-color7: #01529b;
+    --blur-color8: #095aa6;
+    --blur-color9: #4d94f2;
+    --blur-color10: #3260d7;
+    --blur-color11: #4c50b8;
+    --blue-color12: #5a82ff;
+    --darkeblur-color: #00338b;
+    --darkeblur-color1: #2b4cf1;
+    --skyeblur-color: #6bd2ff;
+    --skyeblur-color1: #a9ecfd;
+    --skyeblur-color2: #a4cfff;
+    --skyeblur-color3: #62c0fc;
+    --skyeblur-color4: #68cdfa;
+    --skyeblur-color5: #8ae6ff;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --yellow-color: rgba(251, 226, 23, 0);
+    --yellow-color1: #f6f179;
+    --yellow-color2: #fff83e;
+    --yellow-light-color: #fff2bf;
+    --pink-light-color: #e8a9b2;
+    --grey-color: #dddddd;
+    --grey-color1: #889bb4;
+    --grey-color2: #58759b;
+    --green-color: #19c600;
+    --f12: 12px;
+    --f16: 16px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: radial-gradient(circle, rgb(248, 219, 186) 0%, rgba(253, 240, 231, 1) 100%);
+    font-size: var(--f16);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: var(--f16);
+}
+
+a {
+    color: var(--white-color);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    text-decoration: none;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, h5, h6 {
+    color: var(--white-color);
+    font-weight: 350;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    user-drag: none;
+    border: 0;
+    outline: 0 !important;
+}
+
+h1, .h1 {
+    font-size: 60px;
+}
+
+h2, .h2 {
+    font-size: 42px;
+}
+
+h3, .h3 {
+    font-size: 36px;
+}
+
+h4, .h4 {
+    font-size: 28px;
+}
+
+h5, .h5 {
+    font-size: 24px;
+}
+
+h6, .h6 {
+    font-size: 20px;
+}
+
+@media (min-width: 1360px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+@media (min-width: 1650px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1634px;
+    }
+
+    h1, .h1 {
+        font-size: 60px !important;
+    }
+
+    h2, .h2 {
+        font-size: 18px;
+    }
+
+    h3, .h3 {
+        font-size: 36px;
+    }
+
+    h4, .h4 {
+        font-size: 28px;
+    }
+
+    h5, .h5 {
+        font-size: 24px;
+    }
+
+    h6, .h6 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    h1, .h1 {
+        font-size: 48px;
+    }
+
+    h2, .h2 {
+        font-size: 35px;
+    }
+
+    h3, .h3 {
+        font-size: 34px;
+    }
+
+    h4, .h4 {
+        font-size: 22px;
+    }
+
+    h5, .h5 {
+        font-size: 20px;
+    }
+
+    h6, .h6 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    h1, .h1 {
+        font-size: 44px;
+    }
+
+    h2, .h2 {
+        font-size: 38px;
+    }
+
+    h3, .h3 {
+        font-size: 40px;
+    }
+
+    h4, .h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6, .h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 40px var(--blur-color3) inset !important;
+    -webkit-text-fill-color: var(--white-color);
+}
+
+/*--------------------------------------------------------------
+# Scroll css
+--------------------------------------------------------------*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #7f7f7f;
+    border-radius: 3px;
+}
+
+/*--------------------------------------------------------------
+# Scroll css
+--------------------------------------------------------------*/
+.btn {
+    text-align: center;
+    transition: all .5s ease-in-out;
+    box-shadow: none !important;
+}
+
+.btn-sm {
+    padding: .3rem .58rem;
+    font-size: 14px;
+}
+
+.btn-lg {
+    padding: .60rem 1rem;
+    min-width: 224px;
+}
+
+.btn-md {
+    padding: .58rem .88rem;
+    min-width: 160px;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover, .btn-primary:focus, .btn-outline-primary:focus {
+    background: var(--blur-color);
+    border-color: var(--blur-color);
+    color: var(--white-color);
+}
+
+.btn-white {
+    border-radius: 7px;
+    background: var(--white-color);
+    color: var(--blur-color);
+    clip-path: polygon(0% 0%, 100% 0, 100% 61%, 90% 100%, 0% 100%);
+    min-width: 100px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+}
+
+.btn-transparent {
+    background: transparent;
+    padding: 0;
+    border: 0;
+}
+
+@media (max-width: 991px) {
+    .btn-white {
+        min-width: 140px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .btn-white {
+        min-width: 110px;
+        margin: auto;
+    }
+}
+
+/* Search Placehodler */
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: var(--white-color);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--white-color);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--white-color);
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--white-color);
+}
+
+/* Spinner hide */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

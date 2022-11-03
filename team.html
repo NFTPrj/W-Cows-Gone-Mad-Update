@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cows Gone Mad</title>
+
+    <link rel="icon" href="img/front/images/favicon.ico" type="image/x-icon"/>
+
+    <!--    home page css-->
+    <link rel="stylesheet" href="css/front/bootstrap/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/front/slick/slick.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/front/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/front/style.css" type="text/css">
+    <link rel="stylesheet" href="css/front/animate.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <style>
+        body, p, div, h1, h2, header, footer, span, label, h6, a {
+            color: #3f3f3f !important;
+        }
+
+        .img-fluid_n {
+            max-width: 20%;
+            height: auto;
+            margin-left: 5rem;
+            margin-top: 2.3rem;
+        }       
+
+        .header-title_n {
+            font-family: 'Screebie';
+            -webkit-text-stroke: 1px black;
+            -webkit-text-fill-color: white;
+            letter-spacing: 3px;
+            text-shadow: -2px 5px 1px rgb(0 0 0 / 65%);
+            font-size: 50px;
+        }
+
+        .header-title {
+            font-family: 'Screebie';
+            -webkit-text-stroke: 2px black;
+            -webkit-text-fill-color: white;
+            letter-spacing: 3px;
+            text-shadow: -2px 5px 1px rgb(0 0 0 / 65%);
+            font-size: 60px;
+        }
+
+        .core-team-title {
+            font-family: 'Screebie';
+            -webkit-text-stroke: 1px black;
+            -webkit-text-fill-color: white;
+            letter-spacing: 3px;
+            text-shadow: -2px 5px 1px rgb(0 0 0 / 65%);
+        }
+
+        .header-card-title {
+            font-family: 'Screebie';
+            -webkit-text-stroke: 2px black;
+            -webkit-text-fill-color: white;
+            letter-spacing: 3px;
+            text-shadow: -2px 5px 1px rgb(0 0 0 / 65%);
+            font-size: 80px;
+        }
+
+        .button-text {
+            color: white !important;
+            font-size: 25px;
+            -webkit-text-stroke: 1px black;
+            -webkit-text-fill-color: white;
+            letter-spacing: 3px;
+            text-shadow: -1.1px 1.1px 0px rgba(0, 0, 0, 100%);
+        }
+
+        @media (max-width: 767px) {
+
+            .header-title_n {
+                text-align: left !important;
+                font-size: 45px;
+            }
+
+            .button-text {
+                font-size: 18px !important;
+            }
+
+            .header-title {
+                text-align: center !important;
+                font-size: 45px;
+            }
+
+            .header-card-title {
+                font-family: 'Screebie';
+                -webkit-text-stroke: 0px black;
+                -webkit-text-fill-color: black;
+                text-shadow: none;
+            }
+        }
+
+        .carousel .carousel-item {
+            color: #999;
+            overflow: hidden;
+            min-height: 120px;
+            font-size: 13px;
+        }
+
+        .carousel .testimonial {
+            padding: 0 15px 0 60px;
+            position: relative;
+        }
+
+        .carousel .testimonial::before {
+            content: "\201C";
+            font-family: Arial, sans-serif;
+            color: #e2e2e2;
+            font-weight: bold;
+            font-size: 68px;
+            line-height: 54px;
+            position: absolute;
+            left: 15px;
+            top: 0;
+        }
+
+        .carousel .overview b {
+            text-transform: uppercase;
+            color: #1c47e3;
+        }
+
+        .carousel .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .carousel-indicators li, .carousel-indicators li.active {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 1px 3px;
+            box-sizing: border-box;
+        }
+
+        .carousel-indicators li {
+            background: #e2e2e2;
+            border: 4px solid #fff;
+        }
+
+        .carousel-indicators li.active {
+            color: #fff;
+            background: #1c47e3;
+            border: 5px double;
+        }
+        #more {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container-fluid navbar-background" style="border-bottom: 8px solid #7F7F7F; padding-bottom: 0.7rem; padding-top: 0.7rem;">
+        <div class="d-flex align-items-center justify-content-center justify-content-md-between header_inner">
+
+            <div class="header__logo">
+                <a href="index.html"><img src="img/front/images/ArenaMon-Logo.png" alt="GabiMon" width="160px"/></a>
+            </div>
+
+            <nav class="navbar main-menu collapse" id="navbarSupportedContent">
+                <ul class="list-unstyled m-0" style="font-family: 'Oxygen'">
+                    <li class=""><a href="index.html#origin">Origin</a></li>
+                    <li class=""><a href="index.html#roadmap-sec">Roadmap</a></li>
+                    <li class=""><a href="index.html#collection">Collection</a></li>
+                    <li class=""><a href="index.html#about-the-founder">Founder</a></li>
+                    <li class=""><a href="index.html#about">Background</a></li>
+                    <li class=""><a href="index.html#core-team">Team</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex btn_menu cust__btnmenu">
+                <div class="social_media" style="margin-bottom: -15px;">
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#" target="_blank"><img
+                            src="img/front/images/icons/discord_icon.png" alt=""/></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/cowsgonemad" target="_blank"><img
+                                src="img/front/images/icons/insta_icon.png"
+                                alt="Instagram"/></a>
+                        </li>
+                        <li><a href="https://twitter.com/cowsgonemad" target="_blank"><img
+                            src="img/front/images/icons/twt_icon.png"
+                            alt="Twitter"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggle hamburger_menu" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        id="mobile-menu" style="z-index: 99; margin-top: 20px; margin-right: 16px;">
+                    <svg width="100" height="100" viewBox="0 0 100 100">
+                        <path class="line line1"
+                              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"/>
+                        <path class="line line2" d="M 20,50 H 80"/>
+                        <path class="line line3"
+                              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</header>
+<!-- End Header -->
+
+<section class="legenday_sec" style="padding-top: 25px;margin-top: 150px" id="core-team">
+    <div class="container">
+        <h2 class="text-captialize h2 header-title pt-5 cust_screebie" style="text-align: center;">Team</h2>
+        <div class="row lg_sec_2 mb-5 mt-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/1.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" id="team-1" data-wow-duration="1s"
+                         style="font-family: 'Cabin'; text-align: justify">
+                        <p>
+                            Dr. Ricardo Persaud (BTEC HNC, MB BS (Lond), MPHIL, MSB, CBIOL, DOHNS, MARCS (Gen Surg),
+                            FRCS (ORL-HNS), CCT (Otol (UK) is the Head of ENT Department and ENT Consultant at Al Zahra
+                            Hospital, Sharjah, UAE. He is a graduate of the University College London (UCL) Medical
+                            School, UK and has also trained at Harvard University, USA; Queen Mary Hospital, Hong Kong,
+                            China; and Toronto General Hospital, Canada<span
+                                id="dots"> ...</span>
+                            <span id="more">Over the past 20 years, Dr. Ricardo has focused
+                            on delivering patient-centred care and is dedicated to providing comprehensive care using
+                            the safest and most advanced treatment techniques for his patients. He is a Board certified
+                            Consultant Otorhinolaryngologist where he specialises in the evaluation and treatment of
+                            adult and paediatric patients. Dr. Ricardo’s focus is to ensure that patients are the
+                            priority within his practice.
+                                </span>
+                                    <spna onclick="myFunction()" id="myBtn"
+                                          style="font-weight: bold; color: rgb(0, 0, 0); cursor: pointer;">
+                        <br>Read More
+                    </spna>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+
+                        Dr.Ricardo Persaud FRCS (ORL-HNS)
+                    </h2>
+                    <p style="font-size: 25px">
+                        Founder,
+                        <br>Consultant ENT Surgeon & Head Of Department
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://www.ricardopersaud.com" target="_blank"><img
+                                    src="img/front/images/icons/web_icon.png"
+                                    alt="Website"/></a></li>
+                            <li><a href="https://www.youtube.com/c/DrRicardoPersaud" target="_blank"><img
+                                    src="img/front/images/icons/tube_icon.png"
+                                    alt="Youtube"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/2.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: justify">
+                        <p>
+                            Rochana is an LSE Politics graduate who has spent almost 10 years working as a global Talent
+                            Acquisition specialist within the media, creative advertising and tech industries.
+                        </p>
+                        <p>
+                            She now works at the tech giant: Meta London as the Global Learning Partner where she is
+                            responsible for activating global sales education programs for multiple cross-functional
+                            audiences within Meta<span
+                                id="dots"> ...</span>
+                            <span id="more">Rochana is hugely passionate and active in the Diversity, Equity & Inclusion space as well
+                                as embracing the transformative power that technology - including NFTs, crypto and the
+                                metaverse -
+                                can bring to all sectors.
+                                </span>
+                                    <spna onclick="myFunction()" id="myBtn"
+                                          style="font-weight: bold; color: rgb(0, 0, 0); cursor: pointer;">
+                        <br>Read More
+                    </spna>
+                        </p>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Rochana Jackson, B.A.
+                    </h2>
+                    <p className="text-right" style="font-size: 25px;">
+                        Community Inclusion
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://linkedin.com/in/rochanajackson" target="_blank"><img
+                                    src="img/front/images/icons/ld_icon.png"
+                                    alt="Linkedin"/></a></li>
+                            <li><a href="https://Twitter.com/rochanajackson" target="_blank"><img
+                                    src="img/front/images/icons/twt_icon.png"
+                                    alt="Twitter"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/3.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: justify">
+                        <p>
+                            Monisha Issano graduated from University of Leeds with a BA (International) in Geography and
+                            Sociology. She is currently a 3rd year PhD student of Sociology in Atlanta, Georgia, USA.
+                            Monisha is also a university lecturer, chapter author and copy editor. As a sociologist,
+                            Monisha has a particular interest in the current and future roles of technology in shaping
+                            our social world.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Monisha Issano, B.A.
+                    </h2>
+                    <p style="font-size: 25px">
+                        Copywriter &
+                        <br/>Engagement
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://sociology.gsu.edu/profile/monisha-jackson/" target="_blank"><img
+                                    src="img/front/images/icons/web_icon.png"
+                                    alt="Website"/></a></li>
+                            <li><a href="https://www.linkedin.com/in/monisha-jackson-2527a4b2" target="_blank"><img
+                                    src="img/front/images/icons/ld_icon.png"
+                                    alt="Linkedin"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/4.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: justify">
+                        <p>
+                            Irfan is an illustrator and storyboard artist whose strength lies in his versatility with
+                            both traditional and digital media. He creates character designs, caricatures, and cartoons.
+
+                        </p>
+                        <p>
+                            Inspired by comic art and action heroes, Ifran has had a passion for art from a very young
+                            age. He is trained in fine and graphics art from Karachi, Pakistan. Ifran is highly
+                            enthusiastic about the direction Web3 has taken digital art, particularly how it has
+                            provided smaller artists with a platform to exhibit and appeal to a wider audience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Irfan Saeed Qureshi
+                    </h2>
+                    <p className="text-right" style="font-size: 25px">
+                        Cartoonist, <br/>Illustrator & Artist
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://www.instagram.com/irfancartoon/" target="_blank"><img
+                                    src="img/front/images/icons/insta_icon.png"
+                                    alt="Instagram"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/5.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: left">
+                        <p>
+                            Gaetano has been an avid follower and investor of Crypto and Blockchain technology since
+                            late 2013. He has a passion for fintech and global markets as well as other emerging
+                            technologies. A gamer since the early days of the personal computer and
+                            with the rise of NFTs in late 2020/early 2021, joining this team was a match made in heaven!
+                        </p>
+                        <p>
+                            His background includes working in the IT sector for 4 years before transitioning to the
+                            Online Marketing industry for the past 4 years.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Gaetano De Luca
+                    </h2>
+                    <p style="font-size: 25px">
+                        Web3 NFT Advisor
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://twitter.com/d0ndeluca" target="_blank"><img
+                                    src="img/front/images/icons/twt_icon.png"
+                                    alt="Twitter"/></a></li>
+                            <li><a href="https://www.linkedin.com/in/tadeluca/" target="_blank"><img
+                                    src="img/front/images/icons/ld_icon.png"
+                                    alt="Linkedin"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/6.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s" style="font-family: 'Cabin'">
+                        <p>
+                            Co-founder of Jackson James Clothing<br/>
+                            Founder of 360 OM (Digital Marketing Agency)<br/>
+                            Start Up Mentor.
+                        </p>
+                        <p>
+                            Tony brings 24 years of marketing and business start-up experience to the project. Tony has
+                            been in the digital space for a number of years and is the founder of a number of digital
+                            businesses ranging from web based software development companies to digital marketing
+                            agencies.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Tony Olanipekun, BSc
+                    </h2>
+                    <p className="text-right" style="font-size: 25px">
+                        Marketing and <br/>Project Manager
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://Twitter.com/Cryptone_Knight" target="_blank"><img
+                                    src="img/front/images/icons/twt_icon.png"
+                                    alt="Twitter"/></a></li>
+                            <li><a href="https://www.linkedin.com/in/tony-olanipekun-a49824a" target="_blank"><img
+                                    src="img/front/images/icons/ld_icon.png"
+                                    alt="Linkedin"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/7.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1s"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: justify">
+                        <p>
+                            Elliott is an Engineer, MIET MSc, with 20 years of experience working across a range of
+                            projects in the private sector. During this period, Elliott has developed his skillset,
+                            working as technical lead on projects ranging from R & D on upcoming technologies to design
+                            and build of autonomous vehicles. Elliott's technical expertise and analytical approach are
+                            key to the successful delivery of the roadmap.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Elliott Clarke
+                    </h2>
+                    <p style="font-size: 25px">
+                        Developer
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://twitter.com/nerd_ell" target="_blank"><img
+                                    src="img/front/images/icons/twt_icon.png"
+                                    alt="Twitter"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row lg_sec_2 mb-5">
+            <div class="col-lg-6">
+                <div class="blue_box block2">
+                    <figure class="gab_pic1 m-0"><img src="img/front/images/landing/cow/8.png"
+                                                      class="img-fluid_n wow fadeInUp" data-wow-duration="1"
+                                                      alt=""/></figure>
+                    <div class="blue_title"></div>
+                    <div class="blue_body wow fadeInLeft" data-wow-duration="1s"
+                         style="font-family: 'Cabin';text-align: justify">
+                        <p>
+                            With over 15 years of experience in the software development industry, Matthew has worked
+                            across projects including FLARE, SDR and most recently web3. He works closely with our
+                            community to drive marketing initiatives that deliver value, to move our roadmap forward and
+                            to ensure our community is heard. Together we #jointheherd
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-left title_block wow FadeInUp" data-wow-duration="1s" style="font-family: 'Cabin'">
+                    <h2 class="h1 header-title_n cust_screebie" style="text-transform: capitalize; font-family: 'Screebie';">
+                        Matthew O’Connor
+                    </h2>
+                    <p className="text-right" style="font-size: 25px">
+                        Engagement & <br/>Marketing
+                    </p>
+                    <div class="social_media pt-5">
+                        <ul class="list-unstyled d-flex">
+                            <li><a href="https://twitter.com/beingmootastic" target="_blank"><img
+                                    src="img/front/images/icons/twt_icon.png"
+                                    alt="Twitter"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Section -->
+
+<!-- Start Footer -->
+<footer class="footer">
+    <div class="footer_contain">
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="footer_top">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="f_logo"><img src="img/front/images/ArenaMon-Logo.png" alt="Cows Gone Mad"/>
+                            </div>
+                        </div>
+                        <!--<div class="col-lg-6 col-md-8">
+                            <div class="get_update">
+                                <label class="d-md-none" style="font-family: 'Screebie';letter-spacing: 3px">Get
+                                    Updates!</label>
+                                <form class="d-flex align-items-center" rel="">
+                                    <label class="d-none d-md-block"
+                                           style="font-family: 'Screebie';letter-spacing: 3px">Get
+                                        Updates!</label>
+                                    <div class="input_field">
+                                        <input type="text" placeholder="Coming soon..." class="form-control"/>
+                                        <button class="btn-transparent btn_submit"><img
+                                                src="img/front/images/gabi-game/submit_btn.png" alt="button"/></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <!-- End Footer top -->
+                <div class="social_media pt-5">
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#" target="_blank"><img
+                            src="img/front/images/icons/discord_icon.png" alt=""/></a>
+                        </li>
+                        <li><a href="https://www.instagram.com/cowsgonemad" target="_blank"><img
+                                src="img/front/images/icons/insta_icon.png"
+                                alt="Instagram"/></a>
+                        </li>
+                        <li><a href="https://twitter.com/cowsgonemad" target="_blank"><img
+                            src="img/front/images/icons/twt_icon.png"
+                            alt="Twitter"/></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Social Media Icons -->
+            </div>
+        </div>
+        <div class="copyrht_sec" style="font-family: 'Cabin'">
+				<span>&#xA9;2022 Cows Gone Mad<br/>
+					All rights reserved.
+				</span>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<!-- Optional JavaScript/Jquery -->
+<script src="js/front/jquery-3.6.0.min.js"></script>
+<script src="js/front/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="js/front/slick/slick.min.js"></script>
+<script src="js/front/main.js"></script>
+<script defer="" src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script type="text/javascript">
+    $('body').on('click', '#myVideo .play_btn', function () {
+        $(".video")[0].src += "&autoplay=1";
+        $(this).hide();
+        event.preventDefault();
+    });
+
+    $('body').on('click', '#myVideo .close', function () {
+        $('#myVideo iframe').attr('src', $('#myVideo iframe').attr('src'));
+    });
+
+    $('body').on('click', '#ourStoryVideo .play_btn', function () {
+        $(".video")[0].src += "&autoplay=1";
+        $(this).hide();
+        event.preventDefault();
+    });
+
+    $('body').on('click', '#ourStoryVideo .close', function () {
+        $('#ourStoryVideo iframe').attr('src', $('#ourStoryVideo iframe').attr('src'));
+    });
+
+
+    function hoverInBtn(value) {
+        document.getElementById("roadmap").className = 'col-12 roadmap_image-' + value;
+    }
+
+    function hoverOutBtn() {
+        document.getElementById("roadmap").className = 'col-12 roadmap_image';
+    }
+</script>
+<script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "<br>Read more";
+            moreText.style.display = "none";
+            document.getElementById("left").src = "img/front/images/landing/gabi_lft.png";
+            document.getElementById("right").src = "img/front/images/landing/gabi_rht.png";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "<br>Read less";
+            moreText.style.display = "inline";
+            document.getElementById("left").src = "img/front/images/landing/gabi_lft_long.png";
+            document.getElementById("right").src = "img/front/images/landing/gabi_rht_long.png";
+        }
+    }
+</script>
+</body>
+</html>

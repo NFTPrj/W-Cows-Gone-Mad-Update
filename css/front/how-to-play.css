@@ -1,0 +1,53 @@
+.how_banner_sec {background: rgb(94,182,251); background: linear-gradient(180deg, #3f81f2 7%, #1d68e7 72%); padding: 130px 0 10px; position: relative; z-index: 111; }
+.how-sec {margin: 40px auto 0;}
+.how-sec p {font-weight: 600;}
+.how_top_left {top: 35%; left: 3%; transform: rotate(-55deg); -webkit-transform: rotate(-55deg);}
+.how_top_left img, .how_top_right img {width: 84px;}
+.how_banner_sec .h_shapes {opacity: 1;}
+.how_top_right {top: 28%; right: 4%;}
+.how_btm_right {bottom: 0; right: 10%; transform: rotate(-55deg); -webkit-transform: rotate(-55deg);}
+.how_btm_right img, .how_btm_center img, .how_btm_lft img {width: 60px;}
+.how_btm_center {top: 56%; right: 22%;}
+.how_btm_lft {bottom: -40px; left: 15%; transform: rotate(-23deg); -webkit-transform: rotate(-23deg);}
+.how-to-video {background: rgb(96,187,252); background: linear-gradient(180deg, rgba(96,187,252,1) 30%, rgba(56,109,196,1) 91%); padding: 100px 0 160px; position: relative; margin-top: -60px; z-index: 0; }
+.how-to-video .play_btn{top:50%; transform: translateY(-50%); -webkit-transform: translateY(-50%);}
+.botm-shape{position: relative; z-index: 1;}
+.botm-shape img {display: block;}
+.how-to-video .video_wrap {background: url(../../img/front/images/how-to-play/video-wraper.png)no-repeat;background-size: 100% 100%;}
+.how-to-video .video_wrap figure {padding: 70px;}
+.r_left_top {top: 13%;}
+.r_right_top {top: 10%;}
+.r_left_btm {transform: rotate(128deg); -webkit-transform: rotate(128deg); bottom: 5%; left: 3%;}
+.r_left_btm img{width: 100%;}
+.video-container { width: 100%; height: 0; padding: 55% 10px 10px; position: relative; border-radius: 6px; overflow: hidden; }
+.video-container video, .video-container iframe {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.hide_play_btn {display: none;} 
+ 
+ @media (max-width: 1200px){
+    .how_banner_sec{padding: 90px 0 30px;}
+    .how-sec{margin: 30px auto 0;}
+    .how-to-video .video_wrap figure{padding: 50px;}
+ }
+ @media (max-width: 767px){
+    .how_banner_sec .h_shapes {max-width: 60px;}   
+    .how-sec .h2 {font-size: 44px; line-height: 1; padding: 0 10%;}
+    .how-to-video .video_wrap figure{padding: 11px 13px 14px 10px;}
+    .how-to-video {padding-bottom: 70px;}
+    .how-to-video .s_shapes {width: 30px;}
+    .how-to-video .s_shapes img {max-width: 100%;}
+    .how_top_right {top: 46%;}
+    .how_btm_center {top: 66%; right: 12%;}
+    .how_top_left {top: 60%; left: 10%;}
+    .how_btm_right {bottom: 5px; }
+    .how_btm_lft {bottom: 0;}
+    .how_top_left img, .how_top_right img {width: 30px;}
+    .how_btm_right img, .how_btm_center img, .how_btm_lft img {width: 20px;}
+    .r_right_top {top: 20%;}
+    .r_right_top {width: 60px!important;}
+    .r_left_top {top: 20%; }
+    .r_left_btm {left:-4%;}
+    .s_shapes.r_left_btm {width: 60px;}
+   }
+@media (max-width: 767px){
+   .how-sec p {font-size: 14px;}
+}
